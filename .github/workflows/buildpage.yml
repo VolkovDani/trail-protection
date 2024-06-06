@@ -23,9 +23,16 @@ jobs:
       - name: Run linter
         run: make lint
       - run: make build
+
+  deploy:
+    if: github.ref_name == 'production'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.GH_PAGES_TOKEN }}
           publish_dir: ./build
           cname: trailprotection.ru
+          
