@@ -41,4 +41,4 @@ jobs:
           cache: 'npm'
       - run: make install
       - name: Deploy
-        run: npx gh-deploy -d build --cname trailprotection.ru -u Danil Volkov volchara287@gmail.com
+        run: npx gh-pages -d build --cname trailprotection.ru -u Danil Volkov volchara287@gmail.com
