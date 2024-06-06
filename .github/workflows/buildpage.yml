@@ -25,11 +25,17 @@ jobs:
       # - name: Run tests
       #   run: make test
       - run: make build
-      - name: Deploy with gh-pages
-        run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
-          npx gh-pages -d build --cname trailprotection.ru -u "github-actions-bot <support+actions@github.com>"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          cname: trailprotection.ru
+      # - name: Deploy with gh-pages
+      #   run: |
+      #     git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
+      #     npx gh-pages -d build --cname trailprotection.ru -u "github-actions-bot <support+actions@github.com>"
+      #   env:
+      #     
       # - name: Deploy
       #   run: npx gh-pages -d build --cname trailprotection.ru -u "VolkovDani <volchara287@gmail.com>"
