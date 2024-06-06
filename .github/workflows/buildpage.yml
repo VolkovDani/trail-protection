@@ -38,4 +38,4 @@ jobs:
         with:
           node-version: 18.x
       - name: Deploy
-        run: make gh-deploy
+        run: make install gh-deploy
