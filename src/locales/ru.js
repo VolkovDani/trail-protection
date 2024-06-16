@@ -13,10 +13,10 @@ export default {
     about: 'О нас',
     contact: 'Контакты',
   },
-  Main: {
+  Hero: {
     hero: {
-      title: 'Всё началось с...',
-      description: 'Банки резины',
+      title: 'Защити своего питона',
+      description: 'При помощи банки резины',
     },
   },
 };
