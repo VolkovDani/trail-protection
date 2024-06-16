@@ -10,7 +10,6 @@ const Stub = () => {
         <img src={brand} className="App-logo" alt="brand" />
         <p>
           {t('testcooking')}
-          {/* Cooking Trail Protection 🍳 */}
         </p>
         <a
           className="App-link"
