@@ -6,16 +6,20 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.3",
     "gh-pages": "^6.1.1",
+    "i18next": "^23.11.5",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.3.1",
+    "react-i18next": "^14.1.2",
     "react-scripts": "5.0.1",
+    "sass": "^1.77.5",
     "web-vitals": "^2.1.4"
   },
   "homepage": "http://trailprotection.ru",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "NODE_ENV='development' react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -23,10 +27,66 @@
     "deploy": "gh-pages -d build --cname trailprotection.ru"
   },
   "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
     "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+      "airbnb",
+      "plugin:react/recommended",
+      "plugin:functional/recommended",
+      "plugin:react-hooks/recommended"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "functional"
+    ],
+    "rules": {
+      "import/extensions": 0,
+      "import/no-unresolved": 0,
+      "react/prop-types": 0,
+      "no-console": 0,
+      "react/react-in-jsx-scope": 0,
+      "functional/no-conditional-statement": 0,
+      "functional/no-expression-statement": 0,
+      "functional/immutable-data": 0,
+      "functional/functional-parameters": 0,
+      "functional/no-try-statement": 0,
+      "functional/no-throw-statement": 0,
+      "functional/no-return-void": 0,
+      "no-underscore-dangle": [
+        2,
+        {
+          "allow": [
+            "__filename",
+            "__dirname"
+          ]
+        }
+      ],
+      "react/function-component-definition": [
+        2,
+        {
+          "namedComponents": "arrow-function"
+        }
+      ],
+      "testing-library/no-debug": 0,
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -41,6 +101,13 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-functional": "^6.5.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2"
   }
 }
