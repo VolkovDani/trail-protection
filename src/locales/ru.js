@@ -8,9 +8,15 @@ export default {
   },
   Header: {
     brandname: 'Trail Protection',
-    home: 'Главная',
+    main: 'Главная',
     customers: 'Покупатели',
     about: 'О нас',
     contact: 'Контакты',
+  },
+  Main: {
+    hero: {
+      title: 'Всё началось с...',
+      description: 'Банки резины',
+    },
   },
 };
