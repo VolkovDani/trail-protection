@@ -13,6 +13,7 @@ const Header = () => {
       variant="dark"
       bg="dark"
       sticky="top"
+      className="mb-2"
     >
       <Container>
         <Navbar.Brand href="#main">
