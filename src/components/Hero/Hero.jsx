@@ -13,7 +13,7 @@ const Hero = () => {
       className="py-1"
     >
       <Row
-        className="p-4 pb-0 pe-lg-0 py-lg-5 align-items-center rounded-3 border shadow-lg"
+        className="p-2 pb-0 pe-lg-0 py-lg-5 align-items-center rounded-3 shadow-lg"
       >
         <Col
           lg="7"
