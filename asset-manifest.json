@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.c927245d.css",
-    "main.js": "/static/js/main.38710ddc.js",
+    "main.css": "/static/css/main.b0290409.css",
+    "main.js": "/static/js/main.d1614c9f.js",
     "static/media/Bicubik.OTF": "/static/media/Bicubik.7bbd8074f169cfc9c676.OTF",
     "static/media/brand.svg": "/static/media/brand.4fc22ac954c683bdcecbde3ce2487c92.svg",
     "static/media/brandlogo.svg": "/static/media/brandlogo.f4a37c9c0920a1fccd4f4aa2e1fb3a44.svg",
     "index.html": "/index.html",
-    "main.c927245d.css.map": "/static/css/main.c927245d.css.map",
-    "main.38710ddc.js.map": "/static/js/main.38710ddc.js.map"
+    "static/media/shopping-basket.svg": "/static/media/shopping-basket.86fc4ce6973869be571d8d3eaa0564b2.svg",
+    "main.b0290409.css.map": "/static/css/main.b0290409.css.map",
+    "main.d1614c9f.js.map": "/static/js/main.d1614c9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c927245d.css",
-    "static/js/main.38710ddc.js"
+    "static/css/main.b0290409.css",
+    "static/js/main.d1614c9f.js"
   ]
 }
