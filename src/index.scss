@@ -4,3 +4,11 @@
   color: $white;
   background-color: $black;
 }
+
+.cart-button:hover {
+  @extend .bg-white;
+}
+
+.cart-button:focus {
+  @extend .bg-white;
+}
