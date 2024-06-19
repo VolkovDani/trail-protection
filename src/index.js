@@ -11,7 +11,8 @@ import Stub from './components/Stub/Stub.jsx';
 import Header from './components/Header/Header.jsx';
 import Hero from './components/Hero/Hero.jsx';
 // import CarouselPhotos from './components/CarouselPhotos/CarouselPhotos.jsx';
-// import CarouselProducts from './components/CarouselProducts/CarouselProducts.jsx';
+import CarouselProducts from './components/CarouselProducts/CarouselProducts.jsx';
+import MainCategories from './components/MainCategories/MainCategories.jsx';
 
 const init = async () => {
   const i18n = i18next.createInstance();
@@ -32,9 +33,12 @@ const init = async () => {
   root.render(
     <React.StrictMode>
       <I18nextProvider i18n={i18n}>
+        <Stub />
         <Header />
         <Hero />
-        {/* <CarouselProducts
+        <MainCategories />
+
+        <CarouselProducts
           carouselItems={[
             {
               id: 1,
@@ -53,10 +57,15 @@ const init = async () => {
               title: 'Первый слайд',
               description: 'Описание первого слайда',
               src: '3.jpg',
+            },
+            {
+              id: 4,
+              title: 'Первый слайд',
+              description: 'Описание первого слайда',
+              src: '1square.jpg',
             }
           ]}
-        /> */}
-        <Stub />
+        />
       </I18nextProvider>
     </React.StrictMode>
   );
