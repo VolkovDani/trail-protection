@@ -1,0 +1,10 @@
+.product-title {
+  background: #ffffff90;
+  color: #000;
+  display: inline-block;
+}
+
+.card-size {
+  width: 15rem;
+  height: 15rem;
+}

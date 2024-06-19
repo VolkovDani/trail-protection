@@ -2,8 +2,12 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { useTranslation } from 'react-i18next';
+
+import './CarouselProducts.css';
 
 const CarouselProducts = (props) => {
+  const { t } = useTranslation('CarouselProducts');
   const { carouselItems } = props;
   return (
     <Container className="my-2">
@@ -11,11 +15,26 @@ const CarouselProducts = (props) => {
         horizontal
         className="overflow-auto"
       >
+        <ListGroup.Item>
+          <Card
+            style={{ width: '10rem', height: '15rem' }}
+          >
+            <Card.Title>
+              <h1
+                className="h5 mx-2 my-3"
+              >
+                {
+                  t('description')
+                }
+              </h1>
+            </Card.Title>
+          </Card>
+        </ListGroup.Item>
         {carouselItems.map(({
-          id, src, title,
+          id, src, title, link,
         }) => (
           <ListGroup.Item key={id}>
-            <Card style={{ width: '15rem', height: '15rem' }} className="theme-black">
+            <Card className="theme-black card-size">
               <Card.Img
                 className="d-block w-100 rounded my-auto"
                 src={`${process.env.PUBLIC_URL}/products/${src}`}
@@ -23,13 +42,12 @@ const CarouselProducts = (props) => {
               />
               <Card.ImgOverlay>
                 <Card.Title
-                  className="px-1"
-                  style={{ background: '#ffffff90', color: '#000', display: 'inline-block' }}
+                  className="px-1 product-title rounded-1"
                 >
                   <Button
                     variant="vertical"
-                    href="#main"
-                    className="justify-content-center"
+                    href={link}
+                    className="justify-content-center cart-button p-1 m-1"
                   >
                     <svg
                       fill="#000000"

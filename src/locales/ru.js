@@ -19,4 +19,7 @@ export default {
       description: 'При помощи банки резины',
     },
   },
+  CarouselProducts: {
+    description: 'У нас есть то, что может сделать твоё катание приятнее',
+  },
 };
