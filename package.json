@@ -49,6 +49,10 @@
       "functional"
     ],
     "rules": {
+      "quotes": [
+        2,
+        "single"
+      ],
       "import/extensions": 0,
       "import/no-unresolved": 0,
       "react/prop-types": 0,
