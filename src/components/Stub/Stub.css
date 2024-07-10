@@ -21,3 +21,36 @@
 .App-link {
   color: #61dafb;
 }
+
+.front-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 10000;
+}
+
+#stub {
+  animation: slide-right 3s 1;
+  -webkit-animation: slide-right 3s 1;
+  -moz-animation: slide-right 3s 1;
+  -o-animation: slide-right 3s 1;
+
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 100%;
+  }
+
+  80% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 0%;
+    z-index: 0;
+  }
+}

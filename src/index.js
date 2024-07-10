@@ -10,9 +10,10 @@ import resources from './locales/index.js';
 import Stub from './components/Stub/Stub.jsx';
 import Header from './components/Header/Header.jsx';
 import Hero from './components/Hero/Hero.jsx';
-// import CarouselPhotos from './components/CarouselPhotos/CarouselPhotos.jsx';
 import CarouselProducts from './components/CarouselProducts/CarouselProducts.jsx';
 import MainCategories from './components/MainCategories/MainCategories.jsx';
+import Gallery from './components/Gallery/Gallery.jsx';
+import About from './components/About/About.jsx';
 
 const init = async () => {
   const i18n = i18next.createInstance();
@@ -37,7 +38,6 @@ const init = async () => {
         <Header />
         <Hero />
         <MainCategories />
-
         <CarouselProducts
           carouselItems={[
             {
@@ -66,6 +66,8 @@ const init = async () => {
             }
           ]}
         />
+        <Gallery />
+        <About />
       </I18nextProvider>
     </React.StrictMode>
   );

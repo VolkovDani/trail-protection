@@ -4,13 +4,11 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import { useTranslation } from 'react-i18next';
 
-import './Hero.css';
-
-const Hero = () => {
-  const { t } = useTranslation('Hero');
+const About = () => {
+  const { t } = useTranslation('About');
   return (
     <Container
-      id="main"
+      id="about"
       className="py-1"
     >
       <Row
@@ -21,11 +19,14 @@ const Hero = () => {
           className="p-3 p-lg-5"
         >
           <h1 className="display-4 fw-bold lh-1">
-            {t('hero.title')}
+            {t('title')}
           </h1>
-          <p className="lead">
-            {t('hero.description')}
-          </p>
+          <blockquote className="blockquote">
+            {t('description')}
+          </blockquote>
+          <blockquote className="blockquote-footer">
+            {t('sign')}
+          </blockquote>
         </Col>
         <Col
           lg="4"
@@ -42,4 +43,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default About;

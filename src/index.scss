@@ -1,5 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
 
+html {
+  scroll-padding-top: 75px;
+}
+
 .theme-black {
   color: $white;
   background-color: $black;
