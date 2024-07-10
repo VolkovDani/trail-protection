@@ -10,6 +10,7 @@ const Hero = () => {
   const { t } = useTranslation('Hero');
   return (
     <Container
+      id="main"
       className="py-1"
     >
       <Row

@@ -20,9 +20,12 @@ const About = () => {
           <h1 className="display-4 fw-bold lh-1">
             {t('title')}
           </h1>
-          <p className="lead">
+          <blockquote className="blockquote">
             {t('description')}
-          </p>
+          </blockquote>
+          <blockquote className="blockquote-footer">
+            {t('sign')}
+          </blockquote>
         </Col>
         <Col
           lg="4"
@@ -33,11 +36,6 @@ const About = () => {
             fluid
             rounded
           />
-        </Col>
-        <Col>
-          <i className="lead">
-            {t('sign')}
-          </i>
         </Col>
       </Row>
     </Container>

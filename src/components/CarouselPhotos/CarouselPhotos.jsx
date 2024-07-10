@@ -1,4 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const CarouselPhotos = (props) => {
   const { carouselItems } = props;
@@ -8,11 +9,16 @@ const CarouselPhotos = (props) => {
         id, src, title, description,
       }) => (
         <Carousel.Item key={id}>
-          <img
+          <LazyLoadImage
             className="d-block w-100"
             src={`${process.env.PUBLIC_URL}/products/${src}`}
             alt={title}
           />
+          {/* <img
+            className="d-block w-100"
+            src={`${process.env.PUBLIC_URL}/products/${src}`}
+            alt={title}
+          /> */}
           <Carousel.Caption
             className="transparent-grey"
           >

@@ -9,9 +9,10 @@ export default {
   Header: {
     brandname: 'Trail Protection',
     main: 'Главная',
-    customers: 'Покупатели',
+    gallery: 'Галерея',
     about: 'О нас',
     contact: 'Контакты',
+    goods: 'Товары',
   },
   Hero: {
     hero: {

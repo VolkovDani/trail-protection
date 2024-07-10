@@ -7,7 +7,9 @@ import './MainCategories.css';
 import GoodsButton from '../small/GoodsButton/GoodsButton';
 
 const MainCategories = () => (
-  <Container>
+  <Container
+    id="goods"
+  >
     <Row
       className="flex-row-reverse"
     >
