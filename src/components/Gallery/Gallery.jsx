@@ -11,7 +11,9 @@ const Gallery = () => {
   const getRandomSec = (maxTime = 10000, minTime = 5000) => Math
     .floor(Math.random() * (maxTime - minTime) + minTime);
   return (
-    <Container>
+    <Container
+      id="gallery"
+    >
       <Row>
         <Col>
           <Carousel

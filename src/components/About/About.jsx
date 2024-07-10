@@ -8,6 +8,7 @@ const About = () => {
   const { t } = useTranslation('About');
   return (
     <Container
+      id="about"
       className="py-1"
     >
       <Row
