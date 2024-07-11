@@ -31,4 +31,16 @@ export default {
     Unde, totam ad nobis debitis omnis, ducimus voluptate dignissimos nesciunt distinctio id mollitia voluptas magnam in quasi excepturi! Perspiciatis, cumque nisi assumenda voluptates sequi ratione vero? Aliquid laboriosam repellat nulla maiores dolorem dolore dicta iusto, doloribus odio, eligendi consequuntur harum possimus explicabo accusantium doloremque, excepturi ipsam beatae corporis quibusdam distinctio ut. Doloremque placeat nam laudantium et aliquid, enim voluptatibus sapiente aut similique maxime nemo. Suscipit, molestias?`,
     sign: 'Подписано рукой дорогого человека',
   },
+  MainCategories: {
+    forYou: 'Для тебя',
+    forIt: 'Для него',
+    firstCategory: {
+      title: 'Товары для велосипеда',
+      description: 'Защита пера, бронепленка, защита оплеток, смазки',
+    },
+    secondCategory: {
+      title: 'Товары для райдера',
+      description: 'Джерси, сумки, балаклавы и многое другое',
+    },
+  },
 };
