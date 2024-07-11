@@ -31,7 +31,7 @@
   z-index: 10000;
 }
 
-#stub {
+.stub-animation {
   animation: slide-right 3s 1;
   -webkit-animation: slide-right 3s 1;
   -moz-animation: slide-right 3s 1;
@@ -52,5 +52,6 @@
   100% {
     opacity: 0%;
     z-index: 0;
+    display: none;
   }
 }
