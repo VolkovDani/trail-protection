@@ -28,10 +28,10 @@ const GoodsButton = (props) => {
       <Col
         className="col-8 lh-1"
       >
-        <p className="my-1 text-black">
+        <p className="my-3 text-black">
           {title}
         </p>
-        { description ? <p className="text-secondary">{description}</p> : null}
+        { description ? <p className="h5">{description}</p> : null}
       </Col>
     </Row>
   );
