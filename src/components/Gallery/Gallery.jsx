@@ -40,7 +40,7 @@ const Gallery = () => {
                 id="right-horizontal-photo"
                 indicators={false}
                 controls={false}
-                interval={getRandomSec(4000, 2000)}
+                interval={getRandomSec()}
                 touch={false}
               >
                 {horizontalPhotos.map((namePhoto) => (

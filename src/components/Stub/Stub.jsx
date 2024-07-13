@@ -1,16 +1,17 @@
+/* eslint-disable react/display-name */
 /* eslint-disable functional/no-expression-statements */
 import { useTranslation } from 'react-i18next';
 import Spinner from 'react-bootstrap/Spinner';
-import { useEffect, useRef } from 'react';
+import { memo, useRef, useEffect } from 'react';
 import brand from '../../assets/brand.svg';
 import './Stub.css';
 
-const Stub = () => {
+const Stub = memo(() => {
   const { t } = useTranslation('Stub');
   const stubRef = useRef(0);
   useEffect(() => {
     window.addEventListener('load', () => {
-      stubRef.current.classList.add('animation-sliding-out');
+      stubRef.current.classList.add('stub-animation');
     });
   });
   return (
@@ -25,7 +26,6 @@ const Stub = () => {
         <img src={brand} className="App-logo" alt="brand" />
         <p>
           {t('testcooking')}
-          <span>  </span>
           <Spinner animation="border" variant="light" />
         </p>
         <a
@@ -39,6 +39,6 @@ const Stub = () => {
       </header>
     </div>
   );
-};
+});
 
 export default Stub;

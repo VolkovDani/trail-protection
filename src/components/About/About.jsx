@@ -33,7 +33,7 @@ const About = () => {
           className="offset-lg-0 p-2 overflow-hidden shadow-lg"
         >
           <Image
-            src={`${process.env.PUBLIC_URL}/products/5.jpg`}
+            src={`${process.env.PUBLIC_URL}/pictures/sobolpilit.jpg`}
             fluid
             rounded
           />

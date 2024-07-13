@@ -1,7 +1,9 @@
 import ListGroup from 'react-bootstrap/ListGroup';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
+import Carousel from 'react-bootstrap/Carousel';
 import { useTranslation } from 'react-i18next';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import './CarouselProducts.css';
 import GoodsButton from '../small/GoodsButton/GoodsButton';
@@ -32,21 +34,75 @@ const CarouselProducts = (props) => {
           </Card>
         </ListGroup.Item>
         {carouselItems.map(({
-          id, src, title, link,
-        }) => (
-          <ListGroup.Item key={id}>
-            <Card className="theme-black card-size">
-              <Card.Img
-                className="d-block w-100 rounded my-auto"
-                src={`${process.env.PUBLIC_URL}/products/${src}`}
-                alt={title}
-              />
-              <Card.ImgOverlay>
-                <GoodsButton link={link} title={title} />
-              </Card.ImgOverlay>
-            </Card>
-          </ListGroup.Item>
-        ))}
+          id, src, title, link, description,
+        }) => {
+          if (src.length === 1) {
+            const [folderName, imageName] = src[0].split('/');
+            return (
+              <ListGroup.Item key={id}>
+                <Card className="theme-black card-size">
+                  <LazyLoadImage
+                    className="d-block w-100 rounded my-auto"
+                    src={`${process.env.PUBLIC_URL}/products/${folderName}/400p/${imageName}`}
+                    srcSet={
+                      `
+                      ${process.env.PUBLIC_URL}/products/${folderName}/200p/${imageName} 600w,
+                      ${process.env.PUBLIC_URL}/products/${folderName}/400p/${imageName} 900w
+                      `
+                    }
+                    alt={title}
+                  />
+                  <Card.ImgOverlay>
+                    <GoodsButton link={link} title={title} description={description} />
+                  </Card.ImgOverlay>
+                </Card>
+              </ListGroup.Item>
+            );
+          }
+          return (
+            <ListGroup.Item key={id}>
+              <Card className="theme-black card-size">
+                <Carousel
+                  controls={false}
+                  indicators={false}
+                  className="my-auto mx-auto"
+                >
+                  {
+                    src.map((srcPath) => {
+                      const [folderName, imageName] = srcPath.split('/');
+                      return (
+                        <Carousel.Item
+                          key={srcPath}
+                        >
+                          <img
+                            className="d-block w-100 rounded"
+                            src={`${process.env.PUBLIC_URL}/products/${folderName}/400p/${imageName}`}
+                            alt={title}
+                            srcSet={
+                              `
+                              ${process.env.PUBLIC_URL}/products/${folderName}/200p/${imageName} 600w,
+                              ${process.env.PUBLIC_URL}/products/${folderName}/400p/${imageName} 900w
+                              `
+                            }
+                          />
+                          {/* <LazyLoadImage
+                            visibleByDefault
+                            className="d-block w-100 rounded"
+                            src={`${process.env.PUBLIC_URL}/products/${srcPath}`}
+                            alt={title}
+                          /> */}
+                        </Carousel.Item>
+                      );
+                    })
+                  }
+                </Carousel>
+                <Card.ImgOverlay>
+                  <GoodsButton link={link} title={title} description={description} />
+                </Card.ImgOverlay>
+              </Card>
+            </ListGroup.Item>
+          );
+        })}
       </ListGroup>
     </Container>
   );
