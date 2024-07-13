@@ -30,9 +30,74 @@
         background: #000;
       }
     </style>
+    <style>
+    .App {
+      text-align: center;
+    }
+
+    .App-logo {
+      height: 40vmin;
+      pointer-events: none;
+    }
+
+    .App-header {
+      background-color: #000000;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+    }
+
+    .App-link {
+      color: #61dafb;
+    }
+
+    .front-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: 10000;
+    }
+    .stub-animation {
+  animation: slide-right 3s 1;
+  -webkit-animation: slide-right 3s 1;
+  -moz-animation: slide-right 3s 1;
+  -o-animation: slide-right 3s 1;
+
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 100%;
+  }
+
+  80% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 0%;
+    z-index: 0;
+    display: none;
+  }
+}
+    </style>
   </head>
   <body>
     <noscript>Тебе необходимо включить JavaScript чтобы сайт отобразился корректно</noscript>
+    <div class="App front-image stub-animation" id="stub">
+      <header class="App-header">
+        <img src="brand.svg" class="App-logo" alt="brand">
+        <p>🍳Cooking Trail Protection<div class="spinner-border text-light"></div></p>
+        <a class="App-link" href="https://vk.com/trailprotection" target="_blank" rel="noopener noreferrer">Группа ВКонтакте</a>
+      </header>
+    </div>
     <div id="root" class="theme-black">
     </div>
     <!--

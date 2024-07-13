@@ -20,7 +20,7 @@ const CarouselProducts = (props) => {
       >
         <ListGroup.Item>
           <Card
-            style={{ width: '10rem', height: '15rem' }}
+            style={{ width: '15rem', height: '20rem' }}
           >
             <Card.Title>
               <h1
@@ -65,7 +65,7 @@ const CarouselProducts = (props) => {
                 <Carousel
                   controls={false}
                   indicators={false}
-                  className="my-auto mx-auto"
+                  className="my-auto"
                 >
                   {
                     src.map((srcPath) => {
