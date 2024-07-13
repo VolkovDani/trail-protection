@@ -11,8 +11,9 @@ import Header from './components/Header/Header.jsx';
 import Hero from './components/Hero/Hero.jsx';
 import CarouselProducts from './components/CarouselProducts/CarouselProducts.jsx';
 import MainCategories from './components/MainCategories/MainCategories.jsx';
-import Gallery from './components/Gallery/Gallery.jsx';
+// import Gallery from './components/Gallery/Gallery.jsx';
 import About from './components/About/About.jsx';
+import Contact from './components/Contact/Contact.jsx';
 
 const init = async () => {
   const i18n = i18next.createInstance();
@@ -104,8 +105,9 @@ const init = async () => {
             }
           ]}
         />
-        <Gallery />
+        {/* <Gallery /> */}
         <About />
+        <Contact />
       </I18nextProvider>
     </React.StrictMode>
   );

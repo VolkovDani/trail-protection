@@ -42,4 +42,15 @@ export default {
       link: 'https://vk.com/market-185472895?section=album_3',
     },
   },
+  Contact: {
+    linksSection: 'Навигация по сайту',
+    contactSection: 'Контакты',
+    madeBy: 'Made by Lunohod © 2024',
+    phoneNum: 'Номер телефона',
+    vkGroup: 'Группа ВКонтакте',
+    vkLink: 'https://vk.com/trailprotection',
+    tel: '88005555535',
+    textToCreator: 'Написать создателю бренда',
+    sobolVkLink: 'https://vk.com/endyrist',
+  },
 };
