@@ -2,22 +2,25 @@
 /* eslint-disable functional/no-expression-statements */
 import { useTranslation } from 'react-i18next';
 import Spinner from 'react-bootstrap/Spinner';
-import { memo, useRef, useEffect } from 'react';
+import { memo, useRef } from 'react';
 import brand from '../../assets/brand.svg';
 import './Stub.css';
 
 const Stub = memo(() => {
   const { t } = useTranslation('Stub');
   const stubRef = useRef(0);
-  useEffect(() => {
-    window.addEventListener('load', () => {
-      stubRef.current.classList.add('stub-animation');
-    });
-  });
+  // useEffect(() => {
+  //   document.addEventListener('readystatechange', () => {
+  //     if (document.readyState === 'complete') {
+  //       stubRef.current.classList.add('stub-animation');
+  //     }
+  //   }, false);
+  //   return document.removeEventListener('readystatechange');
+  // });
   return (
     <div
       className="App front-image"
-      id="mainstub"
+      id="stub"
       ref={stubRef}
     >
       <header

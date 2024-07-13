@@ -31,7 +31,7 @@ const GoodsButton = (props) => {
         <p className="my-3 text-black">
           {title}
         </p>
-        { description ? <p className="h5">{description}</p> : null}
+        { description ? <p className="h6">{description}</p> : null}
       </Col>
     </Row>
   );
