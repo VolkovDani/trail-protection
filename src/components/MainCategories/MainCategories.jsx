@@ -35,7 +35,11 @@ const MainCategories = () => {
             className="border-0"
           >
             <Card.Img
-              src={`${process.env.PUBLIC_URL}/mainCategories/goods_for_it.jpg`}
+              src={`${process.env.PUBLIC_URL}/mainCategories/600p/goods_for_it.jpg`}
+              srcset={
+                `${process.env.PUBLIC_URL}/mainCategories/400p/goods_for_it.jpg 600w,
+                ${process.env.PUBLIC_URL}/mainCategories/600p/goods_for_it.jpg 900w,`
+              }
             />
             <Card.ImgOverlay>
               <GoodsButton
@@ -67,7 +71,11 @@ const MainCategories = () => {
             className="border-0"
           >
             <Card.Img
-              src={`${process.env.PUBLIC_URL}/mainCategories/goods_for_you.jpg`}
+              src={`${process.env.PUBLIC_URL}/mainCategories/600p/goods_for_you.jpg`}
+              srcset={
+                `${process.env.PUBLIC_URL}/mainCategories/400p/goods_for_you.jpg 600w,
+                ${process.env.PUBLIC_URL}/mainCategories/600p/goods_for_you.jpg 900w,`
+              }
             />
             <Card.ImgOverlay>
               <GoodsButton
