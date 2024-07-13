@@ -6,7 +6,7 @@ import i18next from 'i18next';
 import { I18nextProvider, initReactI18next } from 'react-i18next';
 import './styles/index.scss';
 import resources from './locales/index.js';
-import Stub from './components/Stub/Stub.jsx';
+// import Stub from './components/Stub/Stub.jsx';
 import Header from './components/Header/Header.jsx';
 import Hero from './components/Hero/Hero.jsx';
 import CarouselProducts from './components/CarouselProducts/CarouselProducts.jsx';
@@ -34,7 +34,7 @@ const init = async () => {
   root.render(
     <React.StrictMode>
       <I18nextProvider i18n={i18n}>
-        <Stub />
+        {/* <Stub /> */}
         <Header />
         <Hero />
         <MainCategories />
