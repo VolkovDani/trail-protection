@@ -17,7 +17,7 @@ const Stub = memo(() => {
   return (
     <div
       className="App front-image"
-      id="stub"
+      id="mainstub"
       ref={stubRef}
     >
       <header
