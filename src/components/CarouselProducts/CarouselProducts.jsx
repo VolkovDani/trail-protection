@@ -43,11 +43,11 @@ const CarouselProducts = (props) => {
                 <Card className="theme-black card-size">
                   <LazyLoadImage
                     className="d-block w-100 rounded my-auto"
-                    src={`${process.env.PUBLIC_URL}/products/${folderName}/400p/${imageName}`}
+                    src={`${process.env.PUBLIC_URL}/products/${folderName}/400/${imageName}`}
                     srcSet={
                       `
-                      ${process.env.PUBLIC_URL}/products/${folderName}/200p/${imageName} 600w,
-                      ${process.env.PUBLIC_URL}/products/${folderName}/400p/${imageName} 900w
+                      ${process.env.PUBLIC_URL}/products/${folderName}/200/${imageName} 600w,
+                      ${process.env.PUBLIC_URL}/products/${folderName}/400/${imageName} 900w
                       `
                     }
                     alt={title}
@@ -76,21 +76,15 @@ const CarouselProducts = (props) => {
                         >
                           <img
                             className="d-block w-100 rounded"
-                            src={`${process.env.PUBLIC_URL}/products/${folderName}/400p/${imageName}`}
+                            src={`${process.env.PUBLIC_URL}/products/${folderName}/400/${imageName}`}
                             alt={title}
                             srcSet={
                               `
-                              ${process.env.PUBLIC_URL}/products/${folderName}/200p/${imageName} 600w,
-                              ${process.env.PUBLIC_URL}/products/${folderName}/400p/${imageName} 900w
+                              ${process.env.PUBLIC_URL}/products/${folderName}/200/${imageName} 600w,
+                              ${process.env.PUBLIC_URL}/products/${folderName}/400/${imageName} 900w
                               `
                             }
                           />
-                          {/* <LazyLoadImage
-                            visibleByDefault
-                            className="d-block w-100 rounded"
-                            src={`${process.env.PUBLIC_URL}/products/${srcPath}`}
-                            alt={title}
-                          /> */}
                         </Carousel.Item>
                       );
                     })
