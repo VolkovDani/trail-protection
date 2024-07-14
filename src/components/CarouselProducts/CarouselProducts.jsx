@@ -20,6 +20,7 @@ const CarouselProducts = (props) => {
       >
         <ListGroup.Item>
           <Card
+            border="dark"
             style={{ width: '15rem', height: '20rem' }}
           >
             <Card.Title>
@@ -40,7 +41,11 @@ const CarouselProducts = (props) => {
             const [folderName, imageName] = src[0].split('/');
             return (
               <ListGroup.Item key={id}>
-                <Card className="theme-black card-size">
+                <Card
+                  border="dark"
+                  bg="black"
+                  className="card-size"
+                >
                   <LazyLoadImage
                     className="d-block w-100 rounded my-auto"
                     src={`${process.env.PUBLIC_URL}/products/${folderName}/400/${imageName}`}
