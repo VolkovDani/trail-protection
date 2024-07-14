@@ -21,27 +21,27 @@ const MainCategories = () => {
           className="align-content-center"
         >
           <h1
-            className="h3 d-flex justify-content-center"
+            className="h3 text-center"
           >
             {
               t('forIt')
             }
           </h1>
           <p
-            className="d-flex justify-content-center m-0"
+            className="text-center m-0"
           >
             {
               t('firstCategory.title')
             }
           </p>
           <p
-            className="d-flex justify-content-center"
+            className="text-center"
           >
             {
               t('firstCategory.description')
             }
           </p>
-          <div className="d-flex justify-content-center">
+          <div className="text-center">
             <Button
               variant="light"
               className="mb-2"
@@ -73,27 +73,27 @@ const MainCategories = () => {
           className="align-content-center"
         >
           <h1
-            className="h3 d-flex justify-content-center"
+            className="h3 text-center"
           >
             {
               t('forYou')
             }
           </h1>
           <p
-            className="d-flex justify-content-center m-0"
+            className="m-0 text-center"
           >
             {
               t('secondCategory.title')
             }
           </p>
           <p
-            className="d-flex justify-content-center"
+            className="text-center"
           >
             {
               t('secondCategory.description')
             }
           </p>
-          <div className="d-flex justify-content-center">
+          <div className="text-center">
             <Button
               variant="light"
               className="mb-2"
