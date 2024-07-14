@@ -1,4 +1,3 @@
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import cartLogo from '../../../assets/shopping-basket.svg';
 
@@ -7,23 +6,20 @@ import './GoodsButton.css';
 const GoodsButton = (props) => {
   const { description, link, title } = props;
   return (
-    <Row
-      className="size bg-white rounded-end remove-left-space"
+    <a
+      href={link}
+      target="_blank"
+      rel="external noreferrer"
+      className="size bg-white rounded-end remove-left-space row link-dark"
     >
       <Col
         className="align-content-center"
       >
-        <a
-          href={link}
-          target="_blank"
-          rel="external noreferrer"
-        >
-          <img
-            src={cartLogo}
-            className="img-fluid"
-            alt="some"
-          />
-        </a>
+        <img
+          src={cartLogo}
+          className="img-fluid"
+          alt="some"
+        />
       </Col>
       <Col
         className="col-8 lh-1"
@@ -33,7 +29,7 @@ const GoodsButton = (props) => {
         </p>
         { description ? <p className="h6">{description}</p> : null}
       </Col>
-    </Row>
+    </a>
   );
 };
 
