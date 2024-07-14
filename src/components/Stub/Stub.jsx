@@ -9,14 +9,6 @@ import './Stub.css';
 const Stub = memo(() => {
   const { t } = useTranslation('Stub');
   const stubRef = useRef(0);
-  // useEffect(() => {
-  //   document.addEventListener('readystatechange', () => {
-  //     if (document.readyState === 'complete') {
-  //       stubRef.current.classList.add('stub-animation');
-  //     }
-  //   }, false);
-  //   return document.removeEventListener('readystatechange');
-  // });
   return (
     <div
       className="App front-image"
