@@ -53,5 +53,6 @@ export default {
     tel: '88005555535',
     textToCreator: 'Написать создателю бренда',
     sobolVkLink: 'https://vk.com/endyrist',
+    linkMadeBy: 'https://github.com/VolkovDani',
   },
 };
