@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/729.a25b27a1.chunk.css","mappings":"AAAA,eACE,oBAAqB,CACrB,UAAW,CACX,oBACF","sources":["components/MainCategories/MainCategories.css"],"sourcesContent":[".product-title {\n  background: #ffffff90;\n  color: #000;\n  display: inline-block;\n}\n"],"names":[],"sourceRoot":""}
