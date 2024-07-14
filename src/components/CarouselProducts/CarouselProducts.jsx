@@ -14,7 +14,6 @@ const CarouselProducts = (props) => {
   return (
     <Container className="my-2">
       <ListGroup
-        variant="flush"
         horizontal
         className="overflow-auto"
       >
