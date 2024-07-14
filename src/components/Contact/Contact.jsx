@@ -16,18 +16,6 @@ const Contact = () => {
   return (
     <Container className="bg-dark" id="contact">
       <footer className="row row-cols-sm-2 py-5 my-5">
-        {/* <Col className="mb-3" /> */}
-
-        {/* <Col className="mb-3">
-          <h5>Section</h5>
-          <ul className="nav flex-column">
-            <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">Home</a></li>
-            <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">Features</a></li>
-            <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">Pricing</a></li>
-            <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">FAQs</a></li>
-            <li className="nav-item mb-2"><a className="nav-link p-0 text-muted">About</a></li>
-          </ul>
-        </Col> */}
         <Col className="mb-3">
           <h5>
             {t('linksSection')}
@@ -69,27 +57,17 @@ const Contact = () => {
               <a className="nav-link p-0">{t('sobolVkLink')}</a>
             </li>
 
-            {/* <li className="nav-item mb-2"><a className="nav-link p-0">Features</a></li>
-            <li className="nav-item mb-2"><a className="nav-link p-0">Pricing</a></li>
-            <li className="nav-item mb-2"><a className="nav-link p-0">FAQs</a></li>
-            <li className="nav-item mb-2"><a className="nav-link p-0">About</a></li> */}
           </ul>
         </Col>
       </footer>
       <Row>
         <Col className="mb-3 d-flex justify-content-center">
-          <Navbar.Brand href="#main">
+          <Navbar.Brand href={t('linkMadeBy')}>
             <img src={brand} alt={t('brandname')} className="brand-icon-footer" />
             {
               t('madeBy')
             }
-
           </Navbar.Brand>
-          {/* <p className="">
-            {
-              t('madeBy')
-            }
-          </p> */}
         </Col>
       </Row>
     </Container>

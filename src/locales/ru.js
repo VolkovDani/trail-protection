@@ -31,6 +31,7 @@ export default {
   MainCategories: {
     forYou: 'Для тебя',
     forIt: 'Для него',
+    lookAtSetOfGoods: 'Посмотреть подборки',
     firstCategory: {
       title: 'Товары для велосипеда',
       description: 'Защита пера, бронепленка, защита оплеток, смазки',
@@ -52,5 +53,6 @@ export default {
     tel: '88005555535',
     textToCreator: 'Написать создателю бренда',
     sobolVkLink: 'https://vk.com/endyrist',
+    linkMadeBy: 'https://github.com/VolkovDani',
   },
 };

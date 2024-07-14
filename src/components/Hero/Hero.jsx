@@ -29,10 +29,10 @@ const Hero = () => {
         </Col>
         <Col
           lg="4"
-          className="offset-lg-0 p-2 overflow-hidden shadow-lg"
+          className="offset-lg-0 p-2 overflow-hidden shadow-lg d-flex justify-content-center"
         >
           <Image
-            src={`${process.env.PUBLIC_URL}/products/5.jpg`}
+            src={`${process.env.PUBLIC_URL}/pictures/rezina.jpg`}
             fluid
             rounded
           />
