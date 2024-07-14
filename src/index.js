@@ -87,7 +87,7 @@ const init = async () => {
               {
                 id: 3,
                 link: 'https://vk.com/market-185472895?w=product-185472895_9022014%2Fquery',
-                title: 'Балаклавы',
+                title: 'Балаклава',
                 src: ['bal/bal1.jpg', 'bal/bal2.jpg'],
               },
               {
