@@ -31,6 +31,7 @@ export default {
   MainCategories: {
     forYou: 'Для тебя',
     forIt: 'Для него',
+    lookAtSetOfGoods: 'Посмотреть подборки',
     firstCategory: {
       title: 'Товары для велосипеда',
       description: 'Защита пера, бронепленка, защита оплеток, смазки',
