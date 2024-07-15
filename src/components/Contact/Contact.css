@@ -1,3 +1,8 @@
 .brand-icon-footer {
   height: 9vmin;
 }
+
+.contact-icon-footer {
+  height: 2rem;
+  filter: invert(1);
+}
