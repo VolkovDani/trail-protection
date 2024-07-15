@@ -55,7 +55,7 @@ const Contact = () => {
                       t('phoneNum')
                     }
                     <a
-                      className="nav-link p-0 d-inline-block"
+                      className="nav-link p-0 d-sm-inline-block"
                       href={`tel:${tel}`}
                     >
                       <img src={telephoneIcon} alt={t('phoneLinkAlt')} className="d-inline-block pb-1 px-1 contact-icon-footer" />
@@ -71,7 +71,7 @@ const Contact = () => {
                       t('vkGroup')
                     }
                     <a
-                      className="nav-link p-0 d-inline-block"
+                      className="nav-link p-0 d-sm-inline-block"
                       target="_blank"
                       rel="external noreferrer"
                       href={vkGroup}
@@ -89,7 +89,7 @@ const Contact = () => {
                       t('textToCreator')
                     }
                     <a
-                      className="nav-link p-0 d-inline-block"
+                      className="nav-link p-0 d-sm-inline-block"
                       target="_blank"
                       rel="external noreferrer"
                       href={vkCreator}
@@ -100,7 +100,7 @@ const Contact = () => {
                       tgCreator
                         ? (
                           <a
-                            className="nav-link p-0 d-inline-block"
+                            className="nav-link p-0 d-sm-inline-block"
                             target="_blank"
                             rel="external noreferrer"
                             href={tgCreator}
