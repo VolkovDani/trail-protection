@@ -1,10 +1,12 @@
 import Col from 'react-bootstrap/Col';
-import cartLogo from '../../../assets/shopping-basket.svg';
+import { useTranslation } from 'react-i18next';
 
+import cartLogo from '../../../assets/shopping-basket.svg';
 import './GoodsButton.css';
 
 const GoodsButton = (props) => {
   const { description, link, title } = props;
+  const { t } = useTranslation('GoodsButton');
   return (
     <a
       href={link}
@@ -18,7 +20,7 @@ const GoodsButton = (props) => {
         <img
           src={cartLogo}
           className="img-fluid"
-          alt="some"
+          alt={`${t('buy')} ${title}`}
         />
       </Col>
       <Col

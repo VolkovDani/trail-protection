@@ -61,4 +61,7 @@ export default {
     linkMadeBy: 'https://github.com/VolkovDani',
     brandname: 'Логотип Trail Protection',
   },
+  GoodsButton: {
+    buy: 'Купить',
+  },
 };
