@@ -82,7 +82,16 @@ const init = async () => {
                 id: 2,
                 link: 'https://vk.com/market-185472895?w=product-185472895_8007510%2Fquery',
                 title: 'Поясная сумка',
-                src: ['bag/bag1.jpg'],
+                src: [
+                  'bag/bag1.jpg',
+                  'bag/bag2.jpg',
+                  'bag/bag3.jpg',
+                  'bag/bag4.jpg',
+                  'bag/bag5.jpg',
+                  'bag/bag6.jpg',
+                  'bag/bag7.jpg',
+                  'bag/bag8.jpg',
+                ],
               },
               {
                 id: 3,
@@ -94,7 +103,11 @@ const init = async () => {
                 id: 4,
                 link: 'https://vk.com/market-185472895?w=product-185472895_4732905%2Fquery',
                 title: 'Обмотка',
-                src: ['obmotka/obmotka1.jpg', 'obmotka/obmotka2.jpg'],
+                src: [
+                  'obmotka/obmotka1.jpg',
+                  'obmotka/obmotka2.jpg',
+                  'obmotka/obmotka3.jpg',
+                ],
               },
               {
                 id: 5,
@@ -106,13 +119,21 @@ const init = async () => {
                 id: 6,
                 link: 'https://vk.com/market-185472895?w=product-185472895_4166161%2Fquery',
                 title: 'Резина',
-                src: ['rezina/rezina1.jpg', 'rezina/rezina2.jpg'],
+                src: [
+                  'rezina/rezina1.jpg',
+                  'rezina/rezina2.jpg',
+                  'rezina/rezina3.jpg',
+                  'rezina/rezina4.jpg',
+                ],
               },
               {
                 id: 7,
                 link: 'https://vk.com/market-185472895?w=product-185472895_9092069%2Fquery',
                 title: 'Труба',
-                src: ['truba/truba1.jpg'],
+                src: [
+                  'truba/truba1.jpg',
+                  'truba/truba2.jpg',
+                ],
               },
             ]}
           />
