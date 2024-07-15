@@ -54,5 +54,6 @@ export default {
     textToCreator: 'Написать создателю бренда',
     sobolVkLink: 'https://vk.com/endyrist',
     linkMadeBy: 'https://github.com/VolkovDani',
+    brandname: 'Логотип Trail Protection',
   },
 };

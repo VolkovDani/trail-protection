@@ -60,7 +60,7 @@ const MainCategories = () => {
           >
             <Card.Img
               src={`${process.env.PUBLIC_URL}/mainCategories/600p/goods_for_it.jpg`}
-              srcset={
+              srcSet={
                 `${process.env.PUBLIC_URL}/mainCategories/400p/goods_for_it.jpg 600w,
                 ${process.env.PUBLIC_URL}/mainCategories/600p/goods_for_it.jpg 900w,`
               }
@@ -113,7 +113,7 @@ const MainCategories = () => {
           >
             <Card.Img
               src={`${process.env.PUBLIC_URL}/mainCategories/600p/goods_for_you.jpg`}
-              srcset={
+              srcSet={
                 `${process.env.PUBLIC_URL}/mainCategories/400p/goods_for_you.jpg 600w,
                 ${process.env.PUBLIC_URL}/mainCategories/600p/goods_for_you.jpg 900w,`
               }
