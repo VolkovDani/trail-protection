@@ -11,15 +11,17 @@ import { useTranslation } from 'react-i18next';
 import telephoneIcon from '../../assets/telephone.svg';
 import telegramIcon from '../../assets/telegram_icon.svg';
 import vkIcon from '../../assets/vk_icon.svg';
+import githubIcon from '../../assets/github.svg';
 import brand from '../../assets/brandlogo.svg';
 import './Contact.css';
 
-const Contact = (props) => {
-  const {
-    tel, vkGroup, vkCreator, tgCreator,
-  } = props;
+const Contact = () => {
   const { t: tHeader } = useTranslation('Header');
   const { t } = useTranslation('Contact');
+  const tel = t('tel', '');
+  const vkGroup = t('vkGroup', '');
+  const vkCreator = t('creatorVkLink', '');
+  const tgCreator = t('creatorTgLink', '');
   return (
     <Container className="bg-dark" id="contact">
       <footer className="row row-cols-sm-2 py-5 my-5">
@@ -115,11 +117,19 @@ const Contact = (props) => {
       </footer>
       <Row>
         <Col className="mb-3 d-flex justify-content-center">
-          <Navbar.Brand href={t('linkMadeBy')}>
+          <Navbar.Brand>
             <img src={brand} alt={t('brandname')} className="brand-icon-footer" />
             {
               t('madeBy')
             }
+            <a
+              className="nav-link p-0 d-inline-block"
+              target="_blank"
+              rel="external noreferrer"
+              href={t('linkMadeBy')}
+            >
+              <img src={githubIcon} alt={t('githubLinkAlt')} className="d-inline-block pb-1 px-1 contact-icon-footer" />
+            </a>
           </Navbar.Brand>
         </Col>
       </Row>
