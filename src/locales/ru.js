@@ -57,7 +57,7 @@ export default {
     vkLink: 'https://vk.com/trailprotection',
     tel: '+78005555535',
     creatorVkLink: 'https://vk.com/endyrist',
-    // creatorTgLink: '',
+    creatorTgLink: 'https://t.me/Sobolev_A_S',
     textToCreator: 'Создатель бренда',
     linkMadeBy: 'https://github.com/VolkovDani',
     brandname: 'Логотип Trail Protection',
