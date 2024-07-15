@@ -5,3 +5,11 @@
 .remove-left-space {
   margin-left: -16px;
 }
+
+.cart-icon-pulse {
+  height: 2rem;
+  animation: pulse 2s infinite;
+  -webkit-animation: pulse 2s infinite;
+  -moz-animation: pulse 2s infinite;
+  -o-animation: pulse 2s infinite;
+}

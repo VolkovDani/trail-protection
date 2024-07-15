@@ -19,7 +19,7 @@ const GoodsButton = (props) => {
       >
         <img
           src={cartLogo}
-          className="img-fluid"
+          className="cart-icon-pulse"
           alt={`${t('buy')} ${title}`}
         />
       </Col>
