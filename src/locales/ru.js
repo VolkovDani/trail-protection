@@ -17,7 +17,7 @@ export default {
   Hero: {
     brandname: 'Trail Protection',
     hero: {
-      title: 'Защити своего питона',
+      title: 'Всегда под защитой',
       description: `
       Ты - активный человек, любящий покорять велосипедные трассы и наслаждаться свежим воздухом?
       Тогда тебе точно нужно познакомиться с {{brandname}} - брендом из Ижевска, созданным для тебя!
@@ -54,8 +54,8 @@ export default {
     madeBy: '迎 Made by Lunohod © 2024',
     phoneNum: 'Номер телефона',
     vkGroup: 'Группа ВКонтакте',
-    vkLink: 'https://vk.com/trailprotection',
-    tel: '+78005555535',
+    vkGroupLink: 'https://vk.com/trailprotection',
+    // tel: '+78005555535',
     creatorVkLink: 'https://vk.com/endyrist',
     creatorTgLink: 'https://t.me/Sobolev_A_S',
     textToCreator: 'Создатель бренда',
