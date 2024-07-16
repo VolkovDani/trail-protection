@@ -15,9 +15,14 @@ export default {
     goods: 'Товары',
   },
   Hero: {
+    brandname: 'Trail Protection',
     hero: {
       title: 'Защити своего питона',
-      description: 'При помощи банки резины',
+      description: `
+      Ты - активный человек, любящий покорять велосипедные трассы и наслаждаться свежим воздухом?
+      Тогда тебе точно нужно познакомиться с {{brandname}} - брендом из Ижевска, созданным для тебя!
+      Мы - команда энтузиастов, которые знают, насколько важно, чтобы велосипедная одежда и аксессуары не только стильно выглядели, но и обеспечивали комфорт и безопасность во время каждой поездки.
+      `,
     },
   },
   CarouselProducts: {
@@ -46,14 +51,18 @@ export default {
   Contact: {
     linksSection: 'Навигация по сайту',
     contactSection: 'Контакты',
-    madeBy: 'Made by Lunohod © 2024',
+    madeBy: '迎 Made by Lunohod © 2024',
     phoneNum: 'Номер телефона',
     vkGroup: 'Группа ВКонтакте',
     vkLink: 'https://vk.com/trailprotection',
-    tel: '88005555535',
-    textToCreator: 'Написать создателю бренда',
-    sobolVkLink: 'https://vk.com/endyrist',
+    tel: '+78005555535',
+    creatorVkLink: 'https://vk.com/endyrist',
+    creatorTgLink: 'https://t.me/Sobolev_A_S',
+    textToCreator: 'Создатель бренда',
     linkMadeBy: 'https://github.com/VolkovDani',
     brandname: 'Логотип Trail Protection',
+  },
+  GoodsButton: {
+    buy: 'Купить',
   },
 };

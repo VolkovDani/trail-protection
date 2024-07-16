@@ -24,7 +24,7 @@ const Hero = () => {
             {t('hero.title')}
           </h1>
           <p className="lead">
-            {t('hero.description')}
+            {t('hero.description', { brandname: t('brandname') })}
           </p>
         </Col>
         <Col
