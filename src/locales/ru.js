@@ -34,6 +34,7 @@ export default {
     sign: 'Подписано рукой лунохода',
   },
   MainCategories: {
+    title: 'Товары',
     forYou: 'Для тебя',
     forIt: 'Для него',
     lookAtSetOfGoods: 'Посмотреть подборки',
@@ -64,5 +65,8 @@ export default {
   },
   GoodsButton: {
     buy: 'Купить',
+  },
+  Gallery: {
+    title: 'Фото наших клиентов',
   },
 };

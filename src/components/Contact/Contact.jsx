@@ -33,7 +33,7 @@ const Contact = () => {
             <Nav className="flex-column" navbar>
               <Nav.Link href="#main">{tHeader('main')}</Nav.Link>
               <Nav.Link href="#goods">{tHeader('goods')}</Nav.Link>
-              <Nav.Link href="#gallery">{tHeader('gallery')}</Nav.Link>
+              {/* <Nav.Link href="#gallery">{tHeader('gallery')}</Nav.Link> */}
               <Nav.Link href="#about">{tHeader('about')}</Nav.Link>
               <Nav.Link href="#contact">{tHeader('contact')}</Nav.Link>
             </Nav>

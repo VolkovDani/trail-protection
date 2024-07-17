@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pathToMagick=./magick
+./horizontalScript $pathToMagick ../public/gallery/raw;
+./squareScript $pathToMagick ../public/gallery/raw;
+./verticalScript $pathToMagick ../public/gallery/raw;

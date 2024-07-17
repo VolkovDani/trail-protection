@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# В $1 надо указать путь до ImageMagick
+# В $2 надо указать путь до директории raw с директорией vertical
+folderName=vertical
+smallSize=400
+bigSize=600
+
+if [ ! -d $2/../$folderName ]
+then
+mkdir $2/../$folderName
+fi
+if [ ! -d $2/../$folderName/$smallSize ]
+then
+mkdir $2/../$folderName/$smallSize
+fi
+if [ ! -d $2/../$folderName/$bigSize ]
+then
+mkdir $2/../$folderName/$bigSize
+fi
+
+index=0
+for file in $2/./$folderName/*
+do
+if [ -f "$file" ]
+then
+index=$(($index+1))
+$1 $file -resize $smallSize $index
+mv $index -t $2/../$folderName/$smallSize
+$1 $file -resize $bigSize $index
+mv $index -t $2/../$folderName/$bigSize
+fi
+done
