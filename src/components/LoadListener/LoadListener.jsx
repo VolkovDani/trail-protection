@@ -2,9 +2,9 @@
 import { useEffect } from 'react';
 
 const LoadListener = () => {
-  useEffect(() => () => {
+  useEffect(() => {
     const stubEl = document.getElementById('stub');
-    stubEl.classList.add('stub-animation');
+    return stubEl.classList.add('stub-animation');
   });
 };
 

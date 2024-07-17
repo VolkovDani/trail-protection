@@ -6,7 +6,6 @@ import Button from 'react-bootstrap/Button';
 import { useTranslation } from 'react-i18next';
 
 import './MainCategories.css';
-// import GoodsButton from '../small/GoodsButton/GoodsButton';
 
 const MainCategories = () => {
   const { t } = useTranslation('MainCategories');
@@ -14,6 +13,19 @@ const MainCategories = () => {
     <Container
       id="goods"
     >
+      <Row>
+        <Col
+          lg="7"
+          className="p-3 p-lg-5"
+        >
+          <h1 className="display-4 fw-bold lh-1">
+            {
+              t('title')
+            }
+          </h1>
+        </Col>
+      </Row>
+
       <Row
         className="flex-row-reverse"
       >
