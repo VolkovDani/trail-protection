@@ -21,7 +21,7 @@ const Header = lazy(() => import('./components/Header/Header.jsx'));
 const Hero = lazy(() => import('./components/Hero/Hero.jsx'));
 const CarouselProducts = lazy(() => import('./components/CarouselProducts/CarouselProducts.jsx'));
 const MainCategories = lazy(() => import('./components/MainCategories/MainCategories.jsx'));
-// const Gallery = lazy(() => import('./components/Gallery/Gallery.jsx'));
+const Gallery = lazy(() => import('./components/Gallery/Gallery.jsx'));
 const About = lazy(() => import('./components/About/About.jsx'));
 const Contact = lazy(() => import('./components/Contact/Contact.jsx'));
 
@@ -137,7 +137,7 @@ const init = async () => {
               },
             ]}
           />
-          {/* <Gallery
+          <Gallery
             horizontalPhotos={[
               '1', '2', '3', '4', '5', '6', '7',
             ]}
@@ -147,7 +147,7 @@ const init = async () => {
             squarePhotos={[
               '1', '2', '3', '4', '5', '6', '7',
             ]}
-          /> */}
+          />
           <About />
           <Contact />
         </Suspense>
