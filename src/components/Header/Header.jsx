@@ -24,7 +24,7 @@ const Header = () => {
           <Nav className="me-auto justify-content-end flex-grow-1">
             <Nav.Link href="#main">{t('main')}</Nav.Link>
             <Nav.Link href="#goods">{t('goods')}</Nav.Link>
-            {/* <Nav.Link href="#gallery">{t('gallery')}</Nav.Link> */}
+            <Nav.Link href="#gallery">{t('gallery')}</Nav.Link>
             <Nav.Link href="#about">{t('about')}</Nav.Link>
             <Nav.Link href="#contact">{t('contact')}</Nav.Link>
           </Nav>
