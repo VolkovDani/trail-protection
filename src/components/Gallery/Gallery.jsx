@@ -1,12 +1,12 @@
+/* eslint-disable functional/no-expression-statements */
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { useTranslation } from 'react-i18next';
 
 import './Gallery.css';
-import { useTranslation } from 'react-i18next';
 
 const Gallery = (props) => {
   const { t } = useTranslation('Gallery');
@@ -15,7 +15,8 @@ const Gallery = (props) => {
     verticalPhotos,
     squarePhotos,
   } = props;
-  const getRandomSec = (maxTime = 8000, minTime = 5000) => Math
+
+  const getRandomSec = (maxTime = 6000, minTime = 3000) => Math
     .floor(Math.random() * (maxTime - minTime) + minTime);
   return (
     <Container
@@ -39,29 +40,18 @@ const Gallery = (props) => {
         >
           <Carousel
             id="left-vertical-photo"
+            className="align-content-center"
             indicators={false}
             controls={false}
-            interval={getRandomSec()}
             touch={false}
-            className="align-content-center"
+            interval={getRandomSec()}
           >
             {verticalPhotos
               .filter((namePhoto) => Number(namePhoto) % 2 === 0)
               .map((namePhoto) => (
-                <Carousel.Item key={namePhoto}>
-                  {/* <Image
+                <Carousel.Item key={namePhoto} className="glowing">
+                  <Image
                     fluid
-                    src={`${process.env.PUBLIC_URL}/gallery/vertical/600/${namePhoto}`}
-                    srcSet={
-                      `
-                      ${process.env.PUBLIC_URL}/gallery/vertical/400/${namePhoto} 600w,
-                      ${process.env.PUBLIC_URL}/gallery/vertical/600/${namePhoto} 900w
-                      `
-                    }
-                  /> */}
-                  <LazyLoadImage
-                    className="img-fluid"
-                    loading="lazy"
                     src={`${process.env.PUBLIC_URL}/gallery/vertical/600/${namePhoto}`}
                     srcSet={
                       `
@@ -81,11 +71,12 @@ const Gallery = (props) => {
                 id="right-horizontal-photo"
                 indicators={false}
                 controls={false}
-                interval={getRandomSec()}
                 touch={false}
+                interval={getRandomSec()}
               >
                 {horizontalPhotos.map((namePhoto) => (
                   <Carousel.Item
+                    className="glowing"
                     key={namePhoto}
                   >
                     <Image
@@ -107,16 +98,19 @@ const Gallery = (props) => {
             <Col>
               <Carousel
                 id="first-square-photo"
-                indicators={false}
-                controls={false}
-                interval={getRandomSec()}
-                touch={false}
                 className="my-2"
+                controls={false}
+                indicators={false}
+                touch={false}
+                interval={getRandomSec()}
               >
                 {squarePhotos
                   .filter((namePhoto) => Number(namePhoto) % 2 === 0)
                   .map((namePhoto) => (
-                    <Carousel.Item key={namePhoto}>
+                    <Carousel.Item
+                      key={namePhoto}
+                      className="glowing"
+                    >
                       <Image
                         fluid
                         src={`${process.env.PUBLIC_URL}/gallery/square/600/${namePhoto}`}
@@ -133,16 +127,19 @@ const Gallery = (props) => {
               </Carousel>
               <Carousel
                 id="second-square-photo"
+                className="my-2"
                 indicators={false}
                 controls={false}
-                interval={getRandomSec()}
                 touch={false}
-                className="my-2"
+                interval={getRandomSec()}
               >
                 {squarePhotos
                   .filter((namePhoto) => Number(namePhoto) % 2 === 1)
                   .map((namePhoto) => (
-                    <Carousel.Item key={namePhoto}>
+                    <Carousel.Item
+                      key={namePhoto}
+                      className="glowing"
+                    >
                       <Image
                         fluid
                         src={`${process.env.PUBLIC_URL}/gallery/square/600/${namePhoto}`}
@@ -162,16 +159,19 @@ const Gallery = (props) => {
             >
               <Carousel
                 id="right-vertical-photo"
+                className="align-content-center"
                 indicators={false}
                 controls={false}
-                interval={getRandomSec()}
                 touch={false}
-                className="align-content-center"
+                interval={getRandomSec()}
               >
                 {verticalPhotos
                   .filter((namePhoto) => Number(namePhoto) % 2 === 1)
                   .map((namePhoto) => (
-                    <Carousel.Item key={namePhoto}>
+                    <Carousel.Item
+                      key={namePhoto}
+                      className="glowing"
+                    >
                       <Image
                         fluid
                         src={`${process.env.PUBLIC_URL}/gallery/vertical/600/${namePhoto}`}
