@@ -57,6 +57,9 @@ const MainCategories = () => {
             <Button
               variant="light"
               className="mb-2"
+              href={t('firstCategory.link')}
+              target="_blank"
+              rel="external noreferrer"
             >
               {
                 t('lookAtSetOfGoods')
@@ -109,6 +112,9 @@ const MainCategories = () => {
             <Button
               variant="light"
               className="mb-2"
+              href={t('secondCategory.link')}
+              target="_blank"
+              rel="external noreferrer"
             >
               {
                 t('lookAtSetOfGoods')
